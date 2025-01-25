@@ -8,3 +8,32 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+ .field_with_errors {
+    padding: 2px;
+    background-color: red;
+    color: #fff;
+  }
+  body{
+    background-color: #eee;
+  }
+  form{
+    display: flex;
+    font-style: 2rem;
+    width: 300px;
+    padding: 20px;
+    background-color: rgb(215, 162, 162);
+    border: 1px solid black;
+    border-radius: 8px;
+    flex-direction: column;
+  }
+
+  input[type=submit]{
+    cursor: pointer;
+    padding: 8px 24px;
+    width: 30%;
+    margin-top: 10px;
+    background-color: rgb(96, 133, 39);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+  }

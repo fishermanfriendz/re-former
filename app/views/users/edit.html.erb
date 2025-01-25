@@ -1,0 +1,10 @@
+<h1>Hello <%= @user.username.capitalize %>!</h1>
+<%= form_with model: @user, method: :patch  do |form| %>
+<%= form.label :username, "Edit username"%>
+<%= form.text_field :username, placeholder: "Enter username..." %>
+<%= form.label :password, "Edit password" %>
+<%= form.text_field :password %>
+<%= form.label :email, "Edit email" %>
+<%= form.email_field :email %>
+<%= form.submit :submit %>
+<% end %>
